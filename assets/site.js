@@ -23,7 +23,7 @@
           '<div class="navlinks">' + links + '</div>' +
           '<div class="navcta">' +
             '<a class="btn btn-ghost" href="contact.html">Contact</a>' +
-            '<a class="btn btn-primary" href="contact.html">Try Exhibit Binder Studio</a>' +
+            '<a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio</a>' +
           '</div>' +
         '</nav>' +
       '</div>'
