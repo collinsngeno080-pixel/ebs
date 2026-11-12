@@ -1,82 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exhibit Binder Studio | Court-Ready Litigation Binders, Automatically</title>
-<meta name="description" content="Turn raw case documents into a court-ready exhibit binder, automatically numbered, Bates stamped, indexed, and export-ready as a combined PDF or section-scoped ZIP. Browser-based, built for US exhibit and Bates conventions.">
-<link rel="icon" type="image/png" href="favicon-96x96.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exhibit Binder Studio</title>
+<meta name="description" content="Exhibit Binder Studio turns raw case documents into court-ready binders: numbered, Bates stamped, indexed and always in sync.">
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/ebs.css">
 </head>
-<body data-page="home">
-
-<header id="site-header"></header>
-
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Exhibit Binder Studio home"><img class="logo-light" src="assets/img/logo-nav.png" alt="Exhibit Binder Studio" width="72" height="48"><img class="logo-dark" src="assets/img/logo-footer.png" alt="" width="72" height="48"></a>
+    <nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="how-it-works.html">How It Works</a><a href="features.html">Features</a><a href="security.html">Security</a></nav>
+    <div class="head-ctas">
+      <a class="btn btn-ghost btn-sm" href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="https://ebs.collegeproduce.com/"><span>Try<span class="hide-sm"> Exhibit Binder Studio</span></span></a>
+    </div>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Mobile"><a href="index.html" aria-current="page">Home</a><a href="how-it-works.html">How It Works</a><a href="features.html">Features</a><a href="security.html">Security</a><a href="contact.html">Contact</a></nav>
+</header>
 <main>
-  <section class="hero">
-    <div class="wrap">
-      <h1><span>Court-Ready</span> Exhibit Binders. Numbered, Bates-Stamped, Always In Sync.</h1>
-      <p class="sub">Exhibit Binder Studio turns raw case documents into a court-ready binder, automatically numbered, Bates stamped, indexed, and exportable as a combined PDF or a section-scoped ZIP. It runs in your browser and was built around US exhibit and Bates conventions from the start.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio</a>
-        <a class="btn btn-ghost" href="how-it-works.html">How It Works</a>
-      </div>
-      <p class="micro">Browser-based. No desktop plugin. Built for the US legal market.</p>
-    </div>
-  </section>
 
-  <section class="hp-panel-wrap">
-    <div class="wrap">
-      <div class="hp-panel">
-        <span class="hp-eyebrow">The Problem It Solves</span>
-        <h2 class="hp-h2">The Part Of Binder Prep That Breaks Under Deadline.</h2>
-        <p>One reordered exhibit can break every downstream page reference and Bates number. And because Bates numbers are cited directly in depositions and the court record, a silent numbering error isn't cosmetic: it's a real litigation risk.</p>
-        <div class="hp-callout">
-          <img src="assets/img/icon-diamond.png" alt="">
-          <p>Our core promise: pagination, exhibit numbering, Bates numbers, and bookmarks stay synchronized automatically, no matter how many times the binder is edited.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Exhibit binders for US litigation teams</span>
+      <h1 class="hero-h1">Exhibit binders <br class="br-wide">without the <span class="hl">manual <br class="br-wide">renumbering.</span></h1>
+      <p class="lede">Assemble case documents into an indexed binder. Exhibit numbers, Bates stamps added by Exhibit Binder Studio, and bookmarks update as you reorder.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#how">How it works</a>
+      </div>
+      <div class="hero-note">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Runs in your browser</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No desktop plugin</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Built around US exhibit &amp; Bates conventions</span>
+      </div>
+    </div>
+
+    <div class="studio" aria-label="Interactive example: moving an exhibit in the binder editor renumbers it and updates its Bates range">
+      <div class="win">
+        <div class="win-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="win-title">Binder editor · Trial exhibits (example)</span>
+          <span class="sync" id="sync"><i></i><span id="syncText">In sync</span></span>
+        </div>
+        <div class="app">
+          <div class="app-main">
+            <div class="app-title">Trial exhibits</div>
+            <p class="app-hint">Drag exhibits to change the order. Exhibit numbers and Bates ranges update automatically.</p>
+            <div class="xcard">
+              <div class="xcard-head"><span class="grip">⋮⋮</span>Exhibits<small id="pp">pp. 1–23</small></div>
+              <ol class="xrows" id="rows"></ol>
+            </div>
+          </div>
+          <div class="app-side" aria-hidden="true">
+            <div class="panel-mini">
+              <b>Export</b>
+              <span class="chk"><i></i>Exhibit index page</span>
+              <span class="chk"><i></i>Exhibit cover sheets</span>
+              <span class="go">Export combined PDF</span>
+            </div>
+          </div>
+        </div>
+        <div class="win-foot">
+          <p id="lastChange" aria-live="polite">3 exhibits · 23 pages · <b class="mono">HCF-0001 – HCF-0023</b></p>
+          <button class="demo-btn" id="moveBtn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v16M7 4L3 8M7 4l4 4M17 20V4M17 20l-4-4M17 20l4-4"/></svg><span id="moveLabel">Try a move</span></button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="hp-panel-wrap">
-    <div class="wrap">
-      <div class="hp-panel hp-panel-cards">
-        <span class="hp-eyebrow">Why Exhibit Binder Studio</span>
-        <h2 class="hp-h2">Everything The Manual Process Forgets.</h2>
+<!-- PROBLEM -->
+<section class="sec problem" id="problem">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The problem it solves</span>
+      <h2>The part of binder prep that breaks under deadline.</h2>
+      <p class="lede">One reordered exhibit can break every downstream page reference and Bates number. Bates numbers are cited in depositions and the court record, so a silent numbering error is a real litigation risk.</p>
+    </div>
 
-        <div class="hp-cards">
-          <div class="hp-card">
-            <img src="assets/img/icon-drag.png" alt="">
-            <h3>Assemble in minutes</h3>
-            <p>Drag exhibits into structured binders; numbering, cover pages, and the index build themselves.</p>
-            <span class="hp-rule"></span>
-          </div>
-          <div class="hp-card">
-            <img src="assets/img/icon-bates.png" alt="">
-            <h3>Bates that never drifts</h3>
-            <p>Sequential Bates across a whole production, with independent sequences per section, synced on every edit.</p>
-            <span class="hp-rule"></span>
-          </div>
-          <div class="hp-card">
-            <img src="assets/img/icon-security.png" alt="">
-            <h3>Built for confidential work</h3>
-            <p>Row-level isolation, permanent redaction, and a full audit log of every action.</p>
-            <span class="hp-rule"></span>
-          </div>
+    <div class="compare">
+      <div class="panel bad reveal">
+        <div class="panel-top"><span class="badge">By hand</span></div>
+        <h3>Invoice 4471 moves up one spot.</h3>
+        <p>The labels and stamps were set before the change. Nobody catches it until the index goes out.</p>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Ex.</th><th>Document</th><th>Bates</th></tr></thead>
+            <tbody>
+              <tr><td><b>1</b></td><td>Purchase Agreement</td><td class="mono">HCF 000001–014</td></tr>
+              <tr class="moved"><td class="err">3</td><td>Invoice 4471<span class="err-tag">Wrong ex. no.</span></td><td class="mono err">HCF 000021–023</td></tr>
+              <tr><td class="err">2</td><td>Email chain, Mar 2024<span class="err-tag">Out of order</span></td><td class="mono err">HCF 000015–020</td></tr>
+              <tr><td><b>4</b></td><td>Deposition excerpt</td><td class="mono">HCF 000024–045</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel good reveal">
+        <div class="panel-top"><span class="badge">Exhibit Binder Studio</span></div>
+        <h3>Same move. Everything follows it.</h3>
+        <p>Exhibit numbers, Bates ranges, the index and bookmarks update together on the edit.</p>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Ex.</th><th>Document</th><th>Bates</th></tr></thead>
+            <tbody>
+              <tr><td><b>1</b></td><td>Purchase Agreement</td><td class="mono">HCF 000001–014</td></tr>
+              <tr class="moved"><td><b>2</b></td><td>Invoice 4471<span class="ok-tag">Renumbered</span></td><td class="mono">HCF 000015–017</td></tr>
+              <tr><td><b>3</b></td><td>Email chain, Mar 2024<span class="ok-tag">Updated</span></td><td class="mono">HCF 000018–023</td></tr>
+              <tr><td><b>4</b></td><td>Deposition excerpt</td><td class="mono">HCF 000024–045</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="cta cta-dark"><div class="wrap"><h2>Get the binder right the first time.</h2><p>Stop renumbering by hand. Keep pagination, exhibit numbers, Bates stamps, and bookmarks in sync on every edit and export.</p><div class="cta-row"><a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio</a><a class="btn btn-outline-white" href="contact.html">Talk to Us</a></div></div></section>
+<!-- HOW IT WORKS -->
+<section class="sec how" id="how">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps from documents to binder.</h2>
+      <p class="lede">A short version of the full five-step workflow.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <div class="step-ex" aria-hidden="true">
+          <div class="drop"><b>Drop PDFs here</b> or click to choose · up to 250 MB each</div>
+          <div class="doc"><span>Purchase Agreement.pdf</span><small>1.2 MB · 14 pages</small></div>
+          <div class="doc"><span>Invoice 4471.pdf</span><small>84 KB · 3 pages</small></div>
+        </div>
+        <div class="step-body">
+          <span class="step-n">Step 1</span>
+          <h3>Upload documents</h3>
+          <p>Open a matter and drop in your PDFs. Each one is checked and its pages counted automatically.</p>
+          <span class="step-map">Full workflow steps 1–2</span>
+        </div>
+      </article>
+      <article class="step reveal">
+        <div class="step-ex" aria-hidden="true">
+          <div class="cfg"><span>Prefix</span><b>HCF</b></div>
+          <div class="cfg"><span>Start at</span><b>1</b></div>
+          <div class="cfg"><span>Digits</span><b>4</b></div>
+          <div class="sel">Numbers (1, 2, 3)</div>
+        </div>
+        <div class="step-body">
+          <span class="step-n">Step 2</span>
+          <h3>Arrange &amp; set Bates</h3>
+          <p>Drag exhibits into order or sections, then choose your Bates prefix, start number and number or letter labels.</p>
+          <span class="step-map">Full workflow steps 3–4</span>
+        </div>
+      </article>
+      <article class="step reveal">
+        <div class="step-ex step-index">
+          <span class="output-tag">Generated index preview</span>
+          <div class="ipage">
+            <div class="ipage-head"><h4>EXHIBIT INDEX</h4><span>Harlow v. Coastline</span></div>
+            <div class="irows" id="idx"></div>
+          </div>
+          <p class="output-note">Same order as the editor above.</p>
+        </div>
+        <div class="step-body">
+          <span class="step-n">Step 3</span>
+          <h3>Export &amp; file</h3>
+          <p>Export one combined PDF with an exhibit index, cover sheets and a bookmark for every exhibit.</p>
+          <span class="step-map">Full workflow step 5</span>
+        </div>
+      </article>
+    </div>
+    <p class="more-link"><a href="how-it-works.html">See all five steps →</a></p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Beyond numbering</span>
+      <h2>What else it checks and handles for you.</h2>
+    </div>
+    <div class="bento">
+      <article class="tile t-a reveal">
+        <img class="ico-img" src="assets/img/icons/checklist.png" alt="" width="56" height="56" loading="lazy">
+        <h3>Court-specific QC before you file</h3>
+        <p>Seven presets run a structural pass on the binder and flag anything that needs a person to look at it.</p>
+        <ul class="qc-list" aria-label="Some of the QC presets">
+          <li>US Federal: Fed. R. Civ. P. 5.2</li><li>S.D.N.Y. Individual Practices</li><li>N.D. Cal. Standing Orders</li><li>Delaware Court of Chancery</li><li>PII &amp; sensitive data scan</li>
+        </ul>
+      </article>
+      <article class="tile t-b reveal">
+        <img class="ico-img" src="assets/img/icons/bates.png" alt="" width="56" height="56" loading="lazy">
+        <h3>A Bates sequence per section</h3>
+        <p>Run one sequence across the whole production, or give each section its own.</p>
+        <div class="seq" aria-hidden="true">
+          <div><b>Plaintiff</b>HCF 000001–000023</div>
+          <div><b>Witnesses</b>WIT 000001–000031</div>
+        </div>
+      </article>
+      <article class="tile t-c reveal">
+        <img class="ico-img" src="assets/img/icons/ocr.png" alt="" width="56" height="56" loading="lazy">
+        <h3>Search scanned pages</h3>
+        <p>Scanned PDFs and images are OCR-processed, so every recognized word is searchable across the matter.</p>
+      </article>
+      <article class="tile t-d reveal">
+        <img class="ico-img" src="assets/img/icons/security.png" alt="" width="56" height="56" loading="lazy">
+        <h3>Privilege watermarks</h3>
+        <p>Exports carry privileged or attorneys'-eyes-only watermarks automatically on the exhibits you mark.</p>
+      </article>
+      <article class="tile t-e reveal">
+        <img class="ico-img" src="assets/img/icons/one-click.png" alt="" width="56" height="56" loading="lazy">
+        <h3>Secure share links</h3>
+        <p>Send the finished binder to opposing counsel or the court with a secure link.</p>
+      </article>
+    </div>
+    <p class="more-link"><a href="features.html">See all features →</a></p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Get the binder right the first time.</h2>
+    <p>Stop renumbering by hand. Keep pagination, exhibit numbers, Bates stamps and bookmarks in sync on every edit and export.</p>
+    <div class="row-btns">
+      <a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="contact.html">Talk to us</a>
+    </div>
+  </div>
+</section>
+
 </main>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" aria-label="Exhibit Binder Studio home"><img src="assets/img/logo-footer.png" alt="Exhibit Binder Studio" width="84" height="56"></a>
+        <p>Court-ready exhibit binders, numbered and Bates stamped automatically. A College Produce tool.</p>
+      </div>
+      <div class="foot-cols">
+        <div><h5>Product</h5><a href="how-it-works.html">How It Works</a><a href="features.html">Features</a><a href="security.html">Security</a></div>
+        <div><h5>Company</h5><a href="contact.html">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Exhibit Binder Studio. All rights reserved.</span>
+      <span class="social"><a href="#" aria-label="X"><img src="assets/img/icons/x.png" alt="" width="22" height="22"></a><a href="#" aria-label="YouTube"><img src="assets/img/icons/youtube.png" alt="" width="22" height="22"></a><a href="#" aria-label="TikTok"><img src="assets/img/icons/tiktok.png" alt="" width="22" height="22"></a><a href="#" aria-label="Reddit"><img src="assets/img/icons/reddit.png" alt="" width="22" height="22"></a></span>
+      <span>College Produce, Inc. | 100 Biscayne Blvd, Miami, FL 33132</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/ebs.js"></script>
+<script>
+(function(){
+  var PREFIX = "HCF-", DIGITS = 4;
+  var docs = [
+    {id:"pa",  name:"Purchase Agreement.pdf", short:"Agreement", pages:14},
+    {id:"em",  name:"Email chain, Mar 2024.pdf", short:"Emails", pages:6},
+    {id:"inv", name:"Invoice 4471.pdf", short:"Invoice", pages:3}
+  ];
+  // Scripted moves: [current exhibit number, target position]
+  var moves = [[3,2],[3,1],[1,3],[2,1]], mi = 0;
+  var order = docs.map(function(d){ return d.id; });
+  var byId = {}; docs.forEach(function(d){ byId[d.id] = d; });
+  var bates = function(n){ return PREFIX + String(n).padStart(DIGITS,"0"); };
+  var $ = function(id){ return document.getElementById(id); };
+  var rowsEl = $("rows"), idxEl = $("idx"), tabsEl = $("tabs"), sync = $("sync"), syncText = $("syncText"),
+      label = $("moveLabel"), note = $("lastChange"), sum = $("xsum");
+  var rowEls = {}, prev = null;
 
-<footer id="site-footer"></footer>
+  function compute(){
+    var start = 1, out = {};
+    order.forEach(function(id,i){ var p = byId[id].pages; out[id] = {ex:i+1, from:start, to:start+p-1}; start += p; });
+    out.total = start - 1; return out;
+  }
+  docs.forEach(function(d){
+    var r = document.createElement("li"); r.className = "xrow";
+    r.innerHTML = '<span class="grip" aria-hidden="true">⋮⋮</span><span class="xnum"></span>' +
+      '<span style="min-width:0"><span class="xname">' + d.name + '</span><span class="xmeta"><b></b> · ' + d.pages + ' pages</span></span><span class="xtag"></span>';
+    rowEls[d.id] = r;
+  });
 
-<script src="assets/site.js"></script>
+  function render(movedId){
+    var first = {};
+    if (movedId) order.forEach(function(id){ first[id] = rowEls[id].getBoundingClientRect().top; });
+    var c = compute(), changed = [];
+    order.forEach(function(id){
+      var r = rowEls[id]; rowsEl.appendChild(r);
+      r.querySelector(".xnum").textContent = c[id].ex;
+      r.querySelector(".xmeta b").textContent = bates(c[id].from) + " – " + bates(c[id].to);
+      r.classList.remove("is-moved","is-updated");
+      var tag = r.querySelector(".xtag"); tag.textContent = "";
+      if (movedId && prev){
+        if (id === movedId){ r.classList.add("is-moved"); tag.textContent = "Moved"; }
+        else if (prev[id].ex !== c[id].ex){ r.classList.add("is-updated"); tag.textContent = "Renumbered"; changed.push(id); }
+      }
+    });
+    idxEl.innerHTML = order.map(function(id){
+      var hot = movedId && (id === movedId || changed.indexOf(id) > -1);
+      return '<div class="irow' + (hot ? ' hot' : '') + '"><b>' + c[id].ex + '</b><span>' + byId[id].short + '</span><em>' + bates(c[id].from) + '</em></div>';
+    }).join("");
+    if (tabsEl) tabsEl.innerHTML = order.map(function(id,i){ return '<i' + (id === movedId ? ' class="hot"' : '') + '>' + (i+1) + '</i>'; }).join("");
+    if (sum) sum.innerHTML = order.length + ' exhibits · ' + c.total + ' pages · <b>' + bates(1) + ' – ' + bates(c.total) + '</b>';
+    if (movedId){
+      order.forEach(function(id){
+        var dy = first[id] - rowEls[id].getBoundingClientRect().top;
+        if (dy && rowEls[id].animate) rowEls[id].animate([{transform:"translateY("+dy+"px)"},{transform:"none"}],{duration:650,easing:"cubic-bezier(.2,.8,.2,1)"});
+      });
+    }
+    prev = c;
+    return changed.length;
+  }
+
+  function move(){
+    var m = moves[mi % moves.length]; mi++;
+    var id = order.splice(m[0]-1,1)[0]; order.splice(m[1]-1,0,id);
+    sync.classList.add("busy"); syncText.textContent = "Renumbering…";
+    var n = render(id);
+    var c = prev[id];
+    note.textContent = "Exhibit numbers, Bates ranges, and index updated.";
+    label.textContent = "Try another move";
+    setTimeout(function(){ sync.classList.remove("busy"); syncText.textContent = "In sync"; }, 800);
+  }
+
+  render();
+  var btn = $("moveBtn"), busy = false, played = false;
+  function go(){ if (busy) return; busy = true; played = true; move(); setTimeout(function(){ busy = false; }, 900); }
+  btn.addEventListener("click", go);
+  // Play one move when the preview comes into view, then stay on the result
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce && "IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      if (es[0].isIntersecting){ io.disconnect(); setTimeout(function(){ if (!played) go(); }, 1400); }
+    }, {threshold:.5});
+    io.observe(document.querySelector(".studio .win"));
+  }
+})();
+</script>
+
 </body>
 </html>

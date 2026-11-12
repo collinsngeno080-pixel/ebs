@@ -1,89 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>How It Works | Exhibit Binder Studio</title>
-<meta name="description" content="From raw case documents to a court-ready binder in five steps. Exhibit Binder Studio keeps pagination, exhibit numbering, Bates stamps, and bookmarks in sync automatically.">
-<link rel="icon" type="image/png" href="favicon-96x96.png">
+<meta name="description" content="Five steps from raw case documents to a court-ready exhibit binder, with numbering, Bates stamps and bookmarks kept in sync.">
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/ebs.css">
 </head>
-<body data-page="how-it-works">
-
-<header id="site-header"></header>
-
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Exhibit Binder Studio home"><img class="logo-light" src="assets/img/logo-nav.png" alt="Exhibit Binder Studio" width="72" height="48"><img class="logo-dark" src="assets/img/logo-footer.png" alt="" width="72" height="48"></a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="how-it-works.html" aria-current="page">How It Works</a><a href="features.html">Features</a><a href="security.html">Security</a></nav>
+    <div class="head-ctas">
+      <a class="btn btn-ghost btn-sm" href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="https://ebs.collegeproduce.com/"><span>Try<span class="hide-sm"> Exhibit Binder Studio</span></span></a>
+    </div>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Mobile"><a href="index.html">Home</a><a href="how-it-works.html" aria-current="page">How It Works</a><a href="features.html">Features</a><a href="security.html">Security</a><a href="contact.html">Contact</a></nav>
+</header>
 <main>
-  <section class="lp-hero">
-    <div class="wrap">
-      <span class="lp-eyebrow">How It Works</span>
-      <h1 class="lp-h1">From Raw Documents To A <span>Court-Ready</span> Binder.</h1>
-      <p class="lp-sub">Five steps. The system keeps pagination, numbering, Bates stamps, and bookmarks in sync so you don't have to.</p>
+<section class="phero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">How it works</span>
+      <h1>From raw documents to a <span class="hl">court-ready</span> binder.</h1>
+      <p class="lede">Five steps. The system keeps pagination, numbering, Bates stamps and bookmarks in sync, so you don't have to.</p>
+      <div class="hero-ctas"><a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#steps">See the five steps</a></div>
     </div>
-  </section>
-
-  <section class="hiw-problem">
-    <div class="wrap hiw-problem-inner">
-      <h2>The Part Of Binder Prep That Breaks Under Deadline.</h2>
-      <p>Today, most exhibit binders are still assembled largely by hand: renumbering pages in Acrobat, retyping the exhibit index in Word, and rebuilding bookmarks after every last-minute document swap.</p>
-      <div class="hiw-callout">Exhibit Binder Studio's core promise: pagination, exhibit numbering, Bates numbers, and bookmarks stay synchronized automatically, no matter how many times the binder is edited.</div>
-    </div>
-  </section>
-
-  <section class="hiw-steps-section">
-    <div class="wrap">
-      <p class="hiw-intro">Each step feeds the next, and every recompile re-syncs the whole binder, so a change in step 2 never leaves step 4 out of date.</p>
-      <div class="hiw-steps">
-        <div class="hiw-step">
-          <span class="hiw-step-bg">1</span>
-          <div class="hiw-step-icon"><img src="assets/img/step-icon-1.png" alt=""></div>
-          <div class="hiw-step-divider"></div>
-          <div class="hiw-step-body"><h3>Create a Matter</h3><p>Open a matter for the case, set the matter type, assign your team, and connect external document sources.</p></div>
-        </div>
-        <div class="hiw-step">
-          <span class="hiw-step-bg">2</span>
-          <div class="hiw-step-icon"><img src="assets/img/step-icon-2.png" alt=""></div>
-          <div class="hiw-step-divider"></div>
-          <div class="hiw-step-body"><h3>Upload &amp; Organize</h3><p>Upload PDFs and images and group them into exhibit sections: plaintiff, defendant, or witness by witness.</p></div>
-        </div>
-        <div class="hiw-step">
-          <span class="hiw-step-bg">3</span>
-          <div class="hiw-step-icon"><img src="assets/img/step-icon-3.png" alt=""></div>
-          <div class="hiw-step-divider"></div>
-          <div class="hiw-step-body"><h3>Configure &amp; Compile</h3><p>Set the Bates prefix, numbering scheme, and cover page, then compile. The system reflows pages, stamps numbers, and builds the exhibit index automatically.</p></div>
-        </div>
-        <div class="hiw-step">
-          <span class="hiw-step-bg">4</span>
-          <div class="hiw-step-icon"><img src="assets/img/step-icon-4.png" alt=""></div>
-          <div class="hiw-step-divider"></div>
-          <div class="hiw-step-body"><h3>Review &amp; QC</h3><p>Run a court-specific quality check, resolve any flagged issues, and mark exhibits confidential or attorneys'-eyes-only where required.</p></div>
-        </div>
-        <div class="hiw-step">
-          <span class="hiw-step-bg">5</span>
-          <div class="hiw-step-icon">⤓</div>
-          <div class="hiw-step-divider"></div>
-          <div class="hiw-step-body"><h3>Export or Share</h3><p>Download the final PDF binder, export a section-scoped ZIP, or generate a secure share link for opposing counsel or the court.</p></div>
-        </div>
+    <div class="hcard" aria-label="Example compile run">
+      <div class="hcard-head">Compile · Trial Binder Vol. 1 (example)<span class="sync" id="cstatus"><i></i><span id="cstatusText">In sync</span></span></div>
+      <div class="hcard-body">
+        <ul class="compile" id="compile"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Pages reflowed</b><small>Combined in exhibit order</small></span><em>312 pp</em></li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Bates numbers stamped</b><small>Prefix HCF, 6-digit padding</small></span><em>HCF 000001–000312</em></li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Exhibit index built</b><small>Covers and index pages generated</small></span><em>Ex. 1–24</em></li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Bookmarks synced</b><small>One bookmark per exhibit and section</small></span><em>24 marks</em></li></ul>
+        <div class="bar"><i id="cbar"></i></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="hiw-cta">
-    <div class="wrap">
-      <h2>Ready to build your first binder?</h2>
-      <p>See how fast a court-ready binder comes together.</p>
-      <div class="hiw-cta-row">
-        <a class="hiw-btn hiw-btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio</a>
-        <a class="hiw-btn hiw-btn-ghost" href="features.html">Explore Features</a>
-      </div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why it matters</span>
+      <h2>The part of binder prep that breaks under deadline.</h2>
+      <p class="lede">Today, most exhibit binders are still assembled largely by hand. Every last-minute document swap means redoing the same three jobs.</p>
     </div>
-  </section>
+    <div class="chores">
+      <div class="chore reveal"><span class="tool">In Acrobat</span><h3>Renumbering pages</h3><p>Every inserted or removed page shifts everything after it.</p></div>
+      <div class="chore reveal"><span class="tool">In Word</span><h3>Retyping the exhibit index</h3><p>The index is a separate document that falls out of date on the next change.</p></div>
+      <div class="chore reveal"><span class="tool">After every swap</span><h3>Rebuilding bookmarks</h3><p>Bookmarks point to the old pages until someone fixes them one by one.</p></div>
+    </div>
+    <div class="promise reveal"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 24a16 16 0 0 1 27-11.6L40 17M40 8v9h-9M40 24a16 16 0 0 1-27 11.6L8 31M8 40v-9h9"/></svg><p><strong>Exhibit Binder Studio's core promise:</strong> pagination, exhibit numbering, Bates numbers and bookmarks stay synchronized automatically, no matter how many times the binder is edited.</p></div>
+  </div>
+</section>
+
+<section class="sec how" id="steps">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">The five steps</span>
+      <h2>Each step feeds the next.</h2>
+    </div>
+    <div class="timeline"><div class="tl reveal"><span class="tl-n">1</span><div class="tl-text"><h3>Create a matter</h3><p>Open a matter for the case, set the matter type, assign your team, and connect external document sources.</p></div><div class="tl-ui"><span class="ui-label">New matter (example)</span><dl class="kv"><dt>Matter</dt><dd>Harlow v. Coastline Freight</dd><dt>Type</dt><dd>Civil litigation</dd><dt>Team</dt><dd>3 members</dd><dt>Sources</dt><dd>2 connected</dd></dl></div></div><div class="tl reveal"><span class="tl-n">2</span><div class="tl-text"><h3>Upload &amp; organize</h3><p>Upload PDFs and images and group them into exhibit sections: plaintiff, defendant, or witness by witness.</p></div><div class="tl-ui"><span class="ui-label">Exhibit sections</span><div class="secs"><div><b>Plaintiff</b><small>12 exhibits</small></div><div><b>Defendant</b><small>8 exhibits</small></div><div><b>Witness: Alvarez</b><small>4 exhibits</small></div></div></div></div><div class="tl reveal"><span class="tl-n">3</span><div class="tl-text"><h3>Configure &amp; compile</h3><p>Set the Bates prefix, numbering scheme, and cover page, then compile. The system reflows pages, stamps numbers, and builds the exhibit index automatically.</p></div><div class="tl-ui"><span class="ui-label">Compile settings</span><div class="fields"><div class="field"><span>Bates prefix</span><b>HCF</b></div><div class="field"><span>Start number</span><b>000001</b></div><div class="field"><span>Digit padding</span><b>6</b></div><div class="field"><span>Cover page</span><b>On</b></div></div></div></div><div class="tl reveal"><span class="tl-n">4</span><div class="tl-text"><h3>Review &amp; QC</h3><p>Run a court-specific quality check, resolve any flagged issues, and mark exhibits confidential or attorneys'-eyes-only where required.</p></div><div class="tl-ui"><span class="ui-label">QC preset: S.D.N.Y. (example)</span><div class="qc"><div><span>Structure &amp; pagination</span><span class="pill ok">Passed</span></div><div><span>PII &amp; sensitive data scan</span><span class="pill warn">1 to review</span></div><div><span>Ex. 7 marked</span><span class="pill aeo">Attorneys' eyes only</span></div></div></div></div><div class="tl reveal"><span class="tl-n">5</span><div class="tl-text"><h3>Export or share</h3><p>Download the final PDF binder, export a section-scoped ZIP, or generate a secure share link for opposing counsel or the court.</p></div><div class="tl-ui"><span class="ui-label">Export</span><div class="outs"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><b>Combined PDF binder</b><small>.pdf</small></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M12 3v2M12 7v2M12 11v2M10 15h4v3h-4z"/></svg><b>Section-scoped ZIP</b><small>.zip</small></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><b>Secure share link</b><small>link</small></div></div></div></div></div>
+    <div class="sync-note reveal"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 24a16 16 0 0 1 27-11.6L40 17M40 8v9h-9M40 24a16 16 0 0 1-27 11.6L8 31M8 40v-9h9"/></svg><p><strong>Every recompile re-syncs the whole binder,</strong> so a change in step 2 never leaves step 4 out of date.</p></div>
+  </div>
+</section>
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready to build your first binder?</h2>
+    <p>See how fast a court-ready binder comes together.</p>
+    <div class="row-btns">
+      <a class="btn btn-primary" href="https://ebs.collegeproduce.com/">Try Exhibit Binder Studio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="features.html">Explore features</a>
+    </div>
+  </div>
+</section>
 </main>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" aria-label="Exhibit Binder Studio home"><img src="assets/img/logo-footer.png" alt="Exhibit Binder Studio" width="84" height="56"></a>
+        <p>Court-ready exhibit binders, numbered and Bates stamped automatically. A College Produce tool.</p>
+      </div>
+      <div class="foot-cols">
+        <div><h5>Product</h5><a href="how-it-works.html">How It Works</a><a href="features.html">Features</a><a href="security.html">Security</a></div>
+        <div><h5>Company</h5><a href="contact.html">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Exhibit Binder Studio. All rights reserved.</span>
+      <span class="social"><a href="#" aria-label="X"><img src="assets/img/icons/x.png" alt="" width="22" height="22"></a><a href="#" aria-label="YouTube"><img src="assets/img/icons/youtube.png" alt="" width="22" height="22"></a><a href="#" aria-label="TikTok"><img src="assets/img/icons/tiktok.png" alt="" width="22" height="22"></a><a href="#" aria-label="Reddit"><img src="assets/img/icons/reddit.png" alt="" width="22" height="22"></a></span>
+      <span>College Produce, Inc. | 100 Biscayne Blvd, Miami, FL 33132</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/ebs.js"></script>
 
-<footer id="site-footer"></footer>
-
-<script src="assets/site.js"></script>
 </body>
 </html>
