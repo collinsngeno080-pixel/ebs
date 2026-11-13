@@ -9,22 +9,8 @@
   --f-display:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
-  --r:14px; --gutter:max(16px,env(safe-area-inset-left,0px));
+  --r:14px; color-scheme:light; --gutter:max(16px,env(safe-area-inset-left,0px));
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --page:#0D1A29; --cream:#122236; --cream-2:#1A2D45; --line:#26405C; --card:#15283E;
-  --heading:#F1F4F8; --ink:#D5DDE6; --muted:#9AA9BA;
-  --orange:#F08A50; --orange-strong:#F39A66; --orange-soft:#3A2618; --orange-text:#F6A574;
-  --band:#0A1F36; --band-2:#14304F; --deep:#081525; --on-band:#FFFFFF; --on-band-muted:#AFC0D2;
-  --ok:#5CC497; --ok-soft:#173A2C; --bad:#F07A66; --bad-soft:#3E1F1A;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 16px 36px -14px rgba(0,0,0,.6); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --page:#0D1A29; --cream:#122236; --cream-2:#1A2D45; --line:#26405C; --card:#15283E;
-  --heading:#F1F4F8; --ink:#D5DDE6; --muted:#9AA9BA;
-  --orange:#F08A50; --orange-strong:#F39A66; --orange-soft:#3A2618; --orange-text:#F6A574;
-  --band:#0A1F36; --band-2:#14304F; --deep:#081525; --on-band:#FFFFFF; --on-band-muted:#AFC0D2;
-  --ok:#5CC497; --ok-soft:#173A2C; --bad:#F07A66; --bad-soft:#3E1F1A;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 16px 36px -14px rgba(0,0,0,.6); color-scheme:dark}
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -677,6 +663,3 @@ footer .logo img{filter:none;height:56px}
 .social a{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;transition:background .2s}
 .social a:hover{background:rgba(255,255,255,.1)}
 .social img{width:20px;height:20px;object-fit:contain}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .site-head .logo-light{display:none}:root:not([data-theme="light"]) .site-head .logo-dark{display:block}}
-:root[data-theme="dark"] .site-head .logo-light{display:none}
-:root[data-theme="dark"] .site-head .logo-dark{display:block}
